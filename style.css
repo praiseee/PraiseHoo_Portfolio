@@ -199,9 +199,10 @@ nav a:hover {
 .content-container {
     display: flex;
     justify-content: space-between;
-    padding: 100px 20px;
+    padding-left: 60px;
+    padding-top: 75px;
     margin-top: 60px;
-    gap: 40px;
+    max-width: 100%;
 }
 
 /* Left Side: Gallery Column */
@@ -224,12 +225,12 @@ nav a:hover {
 .thumb-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
 }
 
 .gallery-thumb {
-    width: 80px;
-    height: 80px;
+    width: 200px;
+    height: 130px;
     object-fit: cover;
     cursor: pointer;
     border: 2px solid #ccc;
@@ -244,12 +245,12 @@ nav a:hover {
 
 /* Right Side: Description Panel */
 .description-box {
-    flex: 1;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 40%;
-    padding-left: 20px;
+    flex-direction: column;    
+    max-width: 55%;
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-top: 30px;
 }
 
 #project-title {
