@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ferruci Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<!-- Nav Bar -->
+<body>
+    <header>
+        <nav>
+
+            <ul>
+                <li class="brand"><a href="#">Praise Hoo</a></li>
+                <li class="head1"><a href="#overseas-exposure">Overseas Exposure</a></li>
+                <li class="head2"><a href="#extra-curriculum">Extra Curriculum</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+        <!-- Main Content -->
+        <div class="content-container">
+
+            <!-- Gallery Column -->
+            <div class="gallery-column">
+
+                <!-- Main Video -->
+                <div class="main-video-wrapper">
+                    <iframe
+                    width="650" height="350" src="https://www.youtube.com/embed/tlwb6ifXRoU">
+                    </iframe>
+                </div>
+
+                <!-- Thumbnail Images1 -->
+                <div class="thumb-gallery">
+                    <img src="Images/p4.png" class="gallery-thumb" onclick="openLightbox('Images/p4.png')" alt="Project 1">
+                    <img src="Images/p41.png" class="gallery-thumb" onclick="openLightbox('Images/p41.png')" alt="Project 2">
+                    <img src="Images/p42.png" class="gallery-thumb" onclick="openLightbox('Images/p42.png')" alt="Project 3">
+                </div>
+
+                <!-- Thumbnail Images1 -->
+                <div class="thumb-gallery">
+                    <img src="Images/p43.png" class="gallery-thumb" onclick="openLightbox('Images/p43.png')" alt="Project 1">
+                    <img src="Images/p44.png" class="gallery-thumb" onclick="openLightbox('Images/p44.png')" alt="Project 2">
+                    <img src="Images/p45.png" class="gallery-thumb" onclick="openLightbox('Images/p45.png')" alt="Project 3">
+                </div>
+
+                <!-- Thumbnail Images1 -->
+                <div class="thumb-gallery">
+                    <img src="Images/p46.png" class="gallery-thumb" onclick="openLightbox('Images/p43.png')" alt="Project 1">
+                    <img src="Images/p47.png" class="gallery-thumb" onclick="openLightbox('Images/p44.png')" alt="Project 2">
+                    <img src="Images/p48.png" class="gallery-thumb" onclick="openLightbox('Images/p45.png')" alt="Project 3">
+                </div>
+
+            </div>
+
+            <!-- Right Description Panel -->
+            <div class="description-box">
+
+                <h2 id="project-title">Snow Island</h2>
+                <p id="project-desc">A dim, futuristic sci-fi corridor glows with flickering neon—blue and orange lights 
+                    casting sharp reflections on rusted metal walls. The space blends sleek tech with decayed industry. 
+                    At its center hangs a human figure, missing a left leg and half of the other, suspended in 
+                    silence—a grim monument in a forgotten place. </p>
+
+                <h2 id="app-title">Software Used</h2>
+
+                <div class="proj-icons">
+                    <img src="Images/maya.png" alt="Maya" />
+                    <img src="Images/unity.png" alt="Unity" />
+                    <img src="Images/c.png" alt="C Programming" />
+                    <img src="Images/mixamo.png" alt="Mixamo" />
+                </div>
+
+                <p id="app-desc">
+                    <ul>Maya - Terrain Building, Graph Shader for ocean effects, VFX for snow</ul>
+                    <ul>Unity - Terrain Building, Graph Shader for ocean effects, VFX for snow</ul>
+                    <ul>C# - Terrain Building, Graph Shader for ocean effects, VFX for snow</ul>
+                    <ul>Mixamo - Terrain Building, Graph Shader for ocean effects, VFX for snow</ul>
+                </p>
+
+            </div>
+
+            <!-- Lightbox Overlay -->
+            <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                <img id="lightbox-img" src="" alt="Large View">
+            </div>
+
+        </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
