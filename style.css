@@ -239,7 +239,7 @@ nav a:hover {
 }
 
 .gallery-thumb {
-    width: 200px;
+    width: 207px;
     height: 130px;
     object-fit: cover;
     cursor: pointer;
@@ -258,15 +258,29 @@ nav a:hover {
     display: flex;
     flex-direction: column;    
     max-width: 55%;
-    padding-left: 30px;
-    padding-right: 10px;
-    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
 }
 
 #project-title {
-    font-size: 36px;
+    font-size: 34px;
     margin-bottom: 20px;
     color: #333;
+}
+
+#app-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+    padding-top: 25px;
+}
+
+#app-desc {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #333;
+    padding-top: 20px;
 }
 
 #project-desc {
