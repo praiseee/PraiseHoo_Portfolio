@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sci-fi Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<!-- Nav Bar -->
+<body>
+    <header>
+        <nav>
+
+            <ul>
+                <li class="brand"><a href="#">Praise Hoo</a></li>
+                <li class="head1"><a href="#overseas-exposure">Overseas Exposure</a></li>
+                <li><a href="#extra-curriculum">Extra Curriculum</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content-container">
+        <!-- Gallery Column -->
+        <div class="gallery-column">
+            <!-- Main Video -->
+            <video class="main-video" controls>
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- Thumbnail Images -->
+            <div class="thumb-gallery">
+                <img src="Images/p1.png" class="gallery-thumb" onclick="openLightbox('Images/p1.png')" alt="Project 1">
+                <img src="Images/p2.png" class="gallery-thumb" onclick="openLightbox('Images/p2.png')" alt="Project 2">
+                <img src="Images/p3.png" class="gallery-thumb" onclick="openLightbox('Images/p3.png')" alt="Project 3">
+            </div>
+        </div>
+
+        <!-- Right Description Panel -->
+        <div class="description-box">
+            <h2 id="project-title">Sci-fi Corridor</h2>
+            <p id="project-desc">A futuristic corridor designed with Maya and ZBrush, bringing a sense of science fiction realism.</p>
+        </div>
+
+        <!-- Lightbox Overlay -->
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img" src="" alt="Large View">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

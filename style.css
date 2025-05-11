@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+    background-image: url('Images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #333;
+}
+
+/*** NAV BAR ***/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95); /* semi-transparent background */
+    box-shadow: 0 1px 1px rgba(248, 248, 248, 0.1); /* faint line effect */
+    z-index: 1000;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* faint border line */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav ul li {
+    font-size: 18px;
+}
+
+nav ul li.brand {
+    flex-grow: 1;
+    text-align: left;
+}
+
+nav ul li.head1 {
+    flex-grow: 1;
+    text-align: right;
+    padding-right: 75px;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/*** MIDDLE SECTION ***/
+#middleSec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 190px 20px;
+    font-size: 68px;
+    gap: 20px;
+    padding-top: 280px
+}
+
+.introOne p,
+.introTwo p {
+    font-size: 20px;
+}
+
+.text-image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/*** BOTTOM SECTION ***/
+#bottomSec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 80px 150px 30px;
+    font-size: 30px;
+    gap: 20px;
+}
+
+.Project {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.projSecs1,
+.projSecs2 {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.proj-card {
+    width: 390px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.proj-card:hover {
+    transform: translateY(-10px);
+}
+
+.proj-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.proj-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.proj-icons img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+/*** RESPONSIVE DESIGN ***/
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li.brand,
+    nav ul li.head1 {
+        text-align: center;
+        flex-grow: 0;
+        padding-right: 0;
+    }
+
+    #middleSec {
+        font-size: 36px;
+    }
+
+    .proj-card {
+        width: 90%;
+    }
+}
+
+/******************* Sci-fi Page *****************/
+/* Main Content Container */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 20px;
+    margin-top: 60px;
+    gap: 40px;
+}
+
+/* Left Side: Gallery Column */
+.gallery-column {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    gap: 20px;
+}
+
+/* Main Video */
+.main-video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+/* Thumbnail Gallery */
+.thumb-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-thumb {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.2s, border-color 0.3s;
+}
+
+.gallery-thumb:hover {
+    transform: scale(1.05);
+    border-color: #333;
+}
+
+/* Right Side: Description Panel */
+.description-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 40%;
+    padding-left: 20px;
+}
+
+#project-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#project-desc {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Lightbox styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Show the lightbox */
+.lightbox.show {
+    display: flex;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 20px;
+    }
+
+    .gallery-column,
+    .description-box {
+        max-width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .thumb-gallery {
+        justify-content: center;
+    }
+
+    #project-title {
+        font-size: 30px;
+    }
+
+    #project-desc {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        padding: 40px 10px;
+        gap: 30px;
+    }
+
+    #project-title {
+        font-size: 24px;
+    }
+
+    #project-desc {
+        font-size: 14px;
+    }
+
+    .gallery-thumb {
+        width: 70px;
+        height: 70px;
+    }
+}
