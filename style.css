@@ -211,6 +211,7 @@ nav a:hover {
     flex-direction: column;
     max-width: 50%;
     gap: 20px;
+    padding-bottom: 30px;
 }
 
 .main-video-wrapper {
