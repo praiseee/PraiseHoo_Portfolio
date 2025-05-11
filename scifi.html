@@ -29,10 +29,14 @@
         <!-- Gallery Column -->
         <div class="gallery-column">
 
-            <!-- Main Video -->
-            <video class="main-video" controls>
-                <source src="" type="video/mp4">
-            </video>
+        <!-- Main Video -->
+        <div class="main-video-wrapper">
+            <iframe class="main-video" src="https://youtu.be/REeA5_Vu9aw" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
 
             <!-- Thumbnail Images -->
             <div class="thumb-gallery">
@@ -52,7 +56,7 @@
         <div id="lightbox" class="lightbox" onclick="closeLightbox()">
             <img id="lightbox-img" src="" alt="Large View">
         </div>
-        
+
     </div>
 
     <script src="script.js"></script>
