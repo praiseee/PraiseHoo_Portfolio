@@ -23,40 +23,47 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <div class="content-container">
+        <!-- Main Content -->
+        <div class="content-container">
 
-        <!-- Gallery Column -->
-        <div class="gallery-column">
+            <!-- Gallery Column -->
+            <div class="gallery-column">
 
-        <!-- Main Video -->
-        <div class="main-video-wrapper">
-            <iframe width="630" height="350" src="https://www.youtube.com/embed/REeA5_Vu9aw">
-            </iframe>
-            </iframe>
-        </div>
+                <!-- Main Video -->
+                <div class="main-video-wrapper">
+                    <iframe width="630" height="350" src="https://www.youtube.com/embed/REeA5_Vu9aw">
+                    </iframe>
+                    </iframe>
+                </div>
 
+                <!-- Thumbnail Images1 -->
+                <div class="thumb-gallery">
+                    <img src="Images/p1.png" class="gallery-thumb" onclick="openLightbox('Images/p1.png')" alt="Project 1">
+                    <img src="Images/p11.png" class="gallery-thumb" onclick="openLightbox('Images/p11.png')" alt="Project 2">
+                    <img src="Images/p12.png" class="gallery-thumb" onclick="openLightbox('Images/p12.png')" alt="Project 3">
+                </div>
 
-            <!-- Thumbnail Images -->
-            <div class="thumb-gallery">
-                <img src="Images/p1.png" class="gallery-thumb" onclick="openLightbox('Images/p1.png')" alt="Project 1">
-                <img src="Images/p2.png" class="gallery-thumb" onclick="openLightbox('Images/p2.png')" alt="Project 2">
-                <img src="Images/p3.png" class="gallery-thumb" onclick="openLightbox('Images/p3.png')" alt="Project 3">
+                <!-- Thumbnail Images1 -->
+                <div class="thumb-gallery">
+                    <img src="Images/p13.png" class="gallery-thumb" onclick="openLightbox('Images/p13.png')" alt="Project 1">
+                    <img src="Images/p11.png" class="gallery-thumb" onclick="openLightbox('Images/p11.png')" alt="Project 2">
+                    <img src="Images/p12.png" class="gallery-thumb" onclick="openLightbox('Images/p12.png')" alt="Project 3">
+                </div>
+
             </div>
-        </div>
 
-        <!-- Right Description Panel -->
-        <div class="description-box">
-            <h2 id="project-title">Sci-fi Corridor</h2>
-            <p id="project-desc">A futuristic corridor designed with Maya and ZBrush, bringing a sense of science fiction realism.</p>
-        </div>
+            <!-- Right Description Panel -->
+            <div class="description-box">
+                <h2 id="project-title">Sci-fi Corridor</h2>
+                <p id="project-desc">A futuristic corridor designed with Maya and ZBrush, bringing a sense of science fiction realism.</p>
+            </div>
 
-        <!-- Lightbox Overlay -->
-        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-            <img id="lightbox-img" src="" alt="Large View">
-        </div>
+            <!-- Lightbox Overlay -->
+            <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                <img id="lightbox-img" src="" alt="Large View">
+            </div>
 
-    </div>
+        </div>
 
     <script src="script.js"></script>
 </body>
