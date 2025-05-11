@@ -11,7 +11,7 @@ html {
 body {
     font-family: "Montserrat", sans-serif;
     line-height: 1.6;
-    background-image: url('Images/background.png');
+    background-image: url('Images/background2.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -74,13 +74,17 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 190px 20px;
+    padding: 205px 20px;
     font-size: 68px;
-    gap: 20px;
+    gap: 10px;
     padding-top: 280px
 }
 
-.introOne p,
+.introOne p {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
 .introTwo p {
     font-size: 20px;
 }
@@ -90,7 +94,6 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .social-icon {
