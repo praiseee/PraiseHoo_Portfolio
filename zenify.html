@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Cardiac Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<!-- Nav Bar -->
+<body>
+    <header>
+        <nav>
+
+            <ul>
+                <li class="brand"><a href="index.html">Praise Hoo</a></li>
+                <li class="head1"><a href="#overseas-exposure">Overseas Exposure</a></li>
+                <li class="head2"><a href="#extra-curriculum">Extra Curriculum</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+        <!-- Main Content -->
+        <div class="content-container">
+
+            <!-- Gallery Column -->
+            <div class="gallery-column">
+
+                <!-- Main Video -->
+                <div class="main-video-wrapper">
+                    <iframe
+                    width="650" height="350" src="https://www.youtube.com/embed/bdC08MXiyIo">
+                    </iframe>
+                </div>
+
+                <!-- Thumbnail Images1 -->
+                <div class="thumb-gallery">
+                    <img src="Images/51.png" class="gallery-thumb" onclick="openLightbox('Images/51.png')" alt="Project 1">
+                    <img src="Images/52.png" class="gallery-thumb" onclick="openLightbox('Images/52.png')" alt="Project 2">
+                    <img src="Images/53.png" class="gallery-thumb" onclick="openLightbox('Images/53.png')" alt="Project 3">
+                </div>
+
+                <!-- Thumbnail Images1 -->
+                <div class="thumb-gallery">
+                    <img src="Images/54.png" class="gallery-thumb" onclick="openLightbox('Images/54.png')" alt="Project 1">
+                    <img src="Images/55.png" class="gallery-thumb" onclick="openLightbox('Images/55.png')" alt="Project 2">
+                    <img src="Images/56.png" class="gallery-thumb" onclick="openLightbox('Images/56.png')" alt="Project 3">
+                </div>
+
+            </div>
+
+            <!-- Right Description Panel -->
+            <div class="description-box">
+
+                <h2 id="project-title">Zenify (Mobile)</h2>
+                <p id="project-desc">Zenify works as a wellness app designed to support users in their journey towards a 
+                    better mental and physical health. Provide better understanding of the concept of stress/anxiety, cultivating 
+                    healthy mechanisms to reduce and cope with such physiological responses. Building on the increased awareness 
+                    and demand for wellbeing solutions that emerged during the COVID-19 pandemic, Zenify integrates a variety of 
+                    features to support users in the post-pandemic world remaining relevant at any stage. Zenify aims to provide 
+                    digital solutions to help users achieve balance in their daily lives.</p> 
+
+                <h2 id="app-title">Software Used</h2>
+
+                <div class="proj-icons">
+                    <img src="Images/Figma.png">
+                </div>
+
+                <p id="app-desc">
+                    <ul>Figma - Prototyping of mobile application with interactive buttons and effects.</ul>
+                </p>
+
+            </div>
+
+            <!-- Lightbox Overlay -->
+            <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                <img id="lightbox-img" src="" alt="Large View">
+            </div>
+
+        </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
