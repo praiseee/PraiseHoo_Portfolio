@@ -28,7 +28,7 @@ header {
     background-color: rgba(255, 255, 255, 0.95); /* semi-transparent background */
     box-shadow: 0 1px 1px rgba(248, 248, 248, 0.1); /* faint line effect */
     z-index: 1000;
-    padding: 20px 0;
+    padding: 10px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* faint border line */
 }
 
@@ -54,7 +54,7 @@ nav ul li.brand {
 nav ul li.head1 {
     flex-grow: 1;
     text-align: right;
-    padding-right: 75px;
+    padding-right: 0px;
 }
 
 nav a {
@@ -198,7 +198,7 @@ nav a:hover {
     }
 }
 
-/******************* Sci-fi Page *****************/
+/******************* All Proj Page *****************/
 /* Main Content Container */
 .content-container {
     display: flex;
