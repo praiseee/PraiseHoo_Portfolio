@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overseas Exposure</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<!-- Nav Bar -->
+<body>
+    <header>
+        <nav>
+
+            <ul>
+                <li class="brand"><a href="index.html">Praise Hoo</a></li>
+                <li class="head1"><a href="#overseas-exposure">Overseas Exposure</a></li>
+                <li class="head2"><a href="#extra-curriculum">Extra Curriculum</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+        <!-- Main Content -->
+        <div class="content-container">
+
+            <!-- Gallery Column -->
+            <div class="gallery-column">
+
+                <!-- Main Video -->
+                <div class="main-video-wrapper">
+                    <img src="Images/1.JPG" class="gallery-thumb" onclick="openLightbox('Images/1.JPG')" alt="Project 1">
+                </div>
+
+                <!-- Thumbnail Images1 -->
+                <div class="thumb-gallery">
+                    <img src="Images/1.JPG" class="gallery-thumb" onclick="openLightbox('Images/1.JPG')" alt="Project 1">
+                    <img src="Images/2.JPG" class="gallery-thumb" onclick="openLightbox('Images/2.JPG')" alt="Project 2">
+                    <img src="Images/3.JPG" class="gallery-thumb" onclick="openLightbox('Images/3.JPG')" alt="Project 3">
+                </div>
+
+                <!-- Thumbnail Images1 -->
+                <div class="thumb-gallery">
+                    <img src="Images/4.JPG" class="gallery-thumb" onclick="openLightbox('Images/4.JPG')" alt="Project 1">
+                    <img src="Images/5.JPG" class="gallery-thumb" onclick="openLightbox('Images/5.JPG')" alt="Project 2">
+                    <img src="Images/6.JPG" class="gallery-thumb" onclick="openLightbox('Images/6.JPG')" alt="Project 3">
+                </div>
+
+            </div>
+
+            <!-- Right Description Panel -->
+            <div class="description-box">
+
+                <h2 id="project-title">Overseas Exposure</h2>
+                <p id="project-desc">ddsdwdww </p>
+            </div>
+
+            <!-- Lightbox Overlay -->
+            <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                <img id="lightbox-img" src="" alt="Large View">
+            </div>
+
+        </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
