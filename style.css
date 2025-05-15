@@ -202,7 +202,8 @@ nav a:hover {
 /* Main Content Container */
 .content-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* Align items side by side with no large gap */
+    gap: 30px; /* Space between columns */
     padding-left: 60px;
     padding-top: 30px;
     margin-top: 60px;
@@ -213,7 +214,7 @@ nav a:hover {
 .gallery-column {
     display: flex;
     flex-direction: column;
-    max-width: 50%;
+    max-width: 48%; /* Reduced to allow space for right column */
     gap: 20px;
     padding-bottom: 30px;
 }
@@ -224,6 +225,11 @@ nav a:hover {
     padding-bottom: 56%;
     height: 0;
     overflow: hidden;
+}
+
+.main-video-wrapper blockquote.instagram-media {
+    max-width: 100% !important; /* Override inline min-width */
+    min-width: auto !important;
 }
 
 .main-video {
@@ -261,10 +267,10 @@ nav a:hover {
 /* Right Side: Description Panel */
 .description-box {
     display: flex;
-    flex-direction: column;    
-    max-width: 55%;
-    padding-left: 50px;
-    padding-right: 50px;
+    flex-direction: column;
+    max-width: 48%; /* Reduced width */
+    padding-left: 30px; /* Reduced padding */
+    padding-right: 30px;
     padding-top: 60px;
 }
 
@@ -272,20 +278,6 @@ nav a:hover {
     font-size: 34px;
     margin-bottom: 20px;
     color: #333;
-}
-
-#app-title {
-    font-size: 22px;
-    margin-bottom: 20px;
-    color: #333;
-    padding-top: 25px;
-}
-
-#app-desc {
-    font-size: 16px;
-    margin-bottom: 20px;
-    color: #333;
-    padding-top: 20px;
 }
 
 #project-desc {
@@ -336,6 +328,7 @@ button:hover {
     display: flex;
     animation: fadeIn 0.3s ease-in-out;
 }
+
 
 @keyframes fadeIn {
     from { opacity: 0; }
