@@ -286,6 +286,14 @@ nav a:hover {
     color: #555;
 }
 
+#app-title {
+    padding-bottom: 20px;
+}
+
+#app-desc {
+    padding-bottom: 20px;
+}
+
 button {
     padding: 10px 20px;
     font-size: 16px;
