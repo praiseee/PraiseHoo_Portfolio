@@ -203,9 +203,9 @@ nav a:hover {
 .content-container {
     display: flex;
     justify-content: flex-start; /* Align items side by side with no large gap */
-    gap: 30px; /* Space between columns */
+    gap: 20px; /* Space between columns */
     padding-left: 60px;
-    padding-top: 30px;
+    padding-top: 20px;
     margin-top: 60px;
     max-width: 100%;
 }
@@ -276,7 +276,6 @@ nav a:hover {
 
 #project-title {
     font-size: 34px;
-    margin-bottom: 20px;
     color: #333;
 }
 
